@@ -7,7 +7,8 @@ const PATH = 'data.json';
 const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
 export class SyncError extends Error {
-  constructor(message: string, public code: 'auth' | 'conflict' | 'network' | 'other') { super(message); }
+  code: 'auth' | 'conflict' | 'network' | 'other';
+  constructor(message: string, code: SyncError['code']) { super(message); this.code = code; }
 }
 
 const headers = (token: string) => ({
