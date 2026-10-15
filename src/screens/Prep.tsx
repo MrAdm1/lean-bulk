@@ -56,7 +56,7 @@ export function Prep({ data }: { data: Data }) {
             <span className="ico orange big"><Timer size={22} /></span>
             <div>
               <h2>{tab === 'sunday' ? 'About 75 minutes' : 'About 40 minutes'}</h2>
-              <p className="muted">{tab === 'sunday' ? 'Lunches Mon–Wed + chicken for the week' : 'Lunches Thu–Sat'}</p>
+              <p className="muted">{tab === 'sunday' ? '3 lunch bags + chicken for the week' : '3 more lunch bags'}</p>
             </div>
           </section>
           <section className="card">
